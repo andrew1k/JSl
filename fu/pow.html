@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pow</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function pow(a,x) {
+			let result = a;
+			for (let i = 1; i < x; i++) {
+				result *= a;
+			}
+			return result;
+		}
+		let a = prompt("a");
+		let x = prompt("x");
+
+		alert(pow(a, x));
+	</script>
+</body>
+</html>
