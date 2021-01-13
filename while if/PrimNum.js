@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<script type="text/javascript">
+
 		let n = 100;
 
 		prim:
@@ -16,6 +10,3 @@
 			}
 			console.log(i);
 		}
-	</script>
-</body>
-</html>

@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<script type="text/javascript">
+
 		let i = prompt("Number", "");
 		while (i < 100) {
 			i = prompt("Another", "");
 			if (i == null) {break}
 		}
 		alert("good job");
-
-	</script>
-</body>
-</html>
