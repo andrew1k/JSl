@@ -14,3 +14,11 @@ function sort(arr) {
 }
 
 console.log(sort([5,6,7,8,9,1,2,3,4]));
+
+
+function invertionSort(arr) {
+	for (var i = 0; i < arr.length; i++) {
+		let k = arr[i];
+		let j = 
+	}
+}
