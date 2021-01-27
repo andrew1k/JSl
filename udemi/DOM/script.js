@@ -112,10 +112,46 @@ for (let i = 0; i < divs.length; i++) {
 */
 // Lesson 6
 
-let divs = document.querySelectorAll('div')
+var divs = document.querySelectorAll('div')
+var link = document.querySelector('a')
 
-for (let i = 0; i < divs.length; i++) {
-    divs[i].addEventListener('click', function () {
-        console.log(this.getAttribute('id'));
-    })
+for (var i = 0; i < divs.length; i++) {
+  divs[i].addEventListener('click', function(event) {
+    event.stopPropagation()
+    console.log(this.getAttribute('id'))
+  })
 }
+
+
+// adding action to link "Toggle" when it clicks
+link.addEventListener('click', handleLinkClick)
+
+
+//function to change visibility in div
+function handleLinkClick(event) {
+  event.preventDefault()
+
+  //seleccting first div
+  var div = divs[0]
+
+  //change visibility of div
+  div.style.display = div.style.display === 'none'
+    ? 'flex'
+    : 'none'
+}
+
+// Last Lesson
+
+document.getElementById('wrapper').addEventListener('click', function(event) {
+    let tagName = event.target.tagName.toLowerCase()
+
+    //change color lo blue in p tag
+    if (tagName === 'p') {
+        event.target.style.color = 'blue'
+    }
+
+    // change color to red in class="color"
+    if (event.target.classList.contains('color')) {
+        event.target.style.color = 'red'
+    }
+})
