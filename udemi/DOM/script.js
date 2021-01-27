@@ -2,7 +2,7 @@
 // id -> #ID
 // tag -> TAG_NAME
 
-/*
+
 // querySelector() to id => CSS id = #id
 var div = document.querySelector('#playground')
 
@@ -96,16 +96,5 @@ h1.addEventListener('mouseleave', function () {
     this.style.backgroundColor = 'transparent'
 })
 
-*/
 
 
-// Lesson 5
-
-let divs = document.querySelectorAll('div')
-
-for (let i = 0; i < divs.length; i++) {
-    divs[i].addEventListener('click', function () {
-        console.log(this.getAttribute('id'));
-    }// , true
-    )
-}
