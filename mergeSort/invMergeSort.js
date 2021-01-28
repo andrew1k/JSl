@@ -6,11 +6,11 @@ function mergeSort(arr) {
     // creating middle point of Array 
     let n1 = Math.floor(arr.length / 2)
 
-    // divide array by Left side and rigth side
+    // divide array by Left & Rigth sides
     let L = mergeSort(arr.slice(0, n1))
     let R = mergeSort(arr.slice(n1, arr.length))
     
-    // main algorithm of sort
+    // returning main algorithm of sort
     return _mergeArr(L, R)
 }
 
@@ -19,6 +19,7 @@ function _mergeArr(a, b) {
 
     // To make it inverted just change a inequality symbol from '>' to '<'
     while(a.length && b.length) {
+        // add first element of index b(if a[0] < b[0]) to the end of 'c' Array 
         c.push(a[0] < b[0] ? b.shift() : a.shift())
     }
 
