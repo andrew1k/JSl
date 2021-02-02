@@ -1,22 +1,22 @@
 let createCouter = function(counterName) {
-    let counter = 0
+    let counter = 0;
 
     return {
         increment: function() {
-            counter++
+            counter++;
         },
         decrement: function() {
-            counter--
+            counter--;
         },
         getCounter: function() {
-            return counter
+            return counter;
         }
-    }
-}
+    };
+};
 
-let countA = createCouter('counter A')
-let countB = createCouter('counter B')
+let countA = createCouter('counter A');
+let countB = createCouter('counter B');
 
-countA.increment()
+countA.increment();
 
 console.log(countA.getCounter());
