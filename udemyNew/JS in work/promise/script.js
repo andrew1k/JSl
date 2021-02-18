@@ -51,3 +51,18 @@ Promise.all([test(1000), test(2000)]).then(() => {
 Promise.race([test(1000), test(2000)]).then(() => {
     console.log('Success in race');
 })
+
+// JSON Placeholder
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    body: JSON.stringify({name: 'Alex'}),
+    headers: {
+        'Content-type': 'application/json'
+    }
+})
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+
+    
