@@ -34,4 +34,4 @@ class AutoSlider extends Slider {
 const slider = new AutoSlider(600, 400, 5, true)
 slider.play()
 
-export { button, Slider }
+// export { button, Slider }
